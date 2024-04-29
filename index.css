@@ -1,0 +1,178 @@
+/* CSS style for body */
+body {
+    background-color: rgba(35, 2, 2, 0.795);
+    color:rgb(190, 190, 190);
+}
+#whoo{
+    color: white;
+}
+
+
+.buttons{
+    letter-spacing: 15px;
+    width: 100%;
+}
+
+/* CSS style for the top menu buttons */
+#Home, #PAGE1, #PAGE2, #PAGE3, #About, #sw, #ark, #col, #fon, #fon2, #fon3, #col2, #col3{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border-color: rgb(255, 255, 255);
+    border-width: 5px;
+    cursor: pointer;
+}
+
+/* CSS style for bear image in the Brown bear page */
+#img-bear, #img-bearo, #img-beari{
+    border-radius: 0px;
+    position: relative;
+    left: 10px;
+    width: 250px;
+    height: 170px;
+}
+
+#soow{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 500px;
+    height: 350px;
+    border-radius: 30px;
+}
+
+#com, #bearT, #mexicoT, #swedenT, .sup, #rateinfo, #blo{
+    font-family: verdana;
+}
+
+/*CSS stylefor only the text "Source" in Brown bear/Mexico/Sweden pages at bottom of page before the link 
+*/
+#com{
+    font-size: 12px;
+}
+
+/*CSS style for all the links at the bottom of Brown bear/Mexico/Sweden pages after the "Source" paragraph
+*/
+#linkB{
+    color: rgb(0, 0, 0);
+    font-family: verdana;
+    font-size: 12px;
+}
+
+/*Respond pages*/
+#tackBody, #tackBody2, #tackBody3{
+    background-color: rgb(17, 50, 17);
+    color: white;
+    font-family: verdana;
+}
+
+/* CSS styles for "Go back"  buttons.  */
+#goback1, #goback2, #goback3, #goback4{
+    background-color: rgb(0, 139, 144);
+    color: black;
+    border-radius: 5px;
+    border-width: 3px;
+    border-color: white;
+    cursor:pointer;
+    text-align: center;
+}
+
+/*CSS style for the "Rate this information", also the text above them. In Brown bear & Mexico
+*/
+#Veryg, #G, #B, #Veryb, #bearT #mexicoT{
+    font-family: verdana;
+    font-size: 12px;
+}
+
+/*For the tacos picture in the page about Mexico-index2.html*/
+#tacos, #FlagM, #CoatM{
+    height: 150px;
+    width: 200px;
+}
+
+
+#boo{
+    font-family: Arial;
+    text-align: center;
+}
+#bearPics, #MexicoPics, #SwedenPics{
+    text-align: center;
+    letter-spacing: 20px;
+}
+
+
+.sup, #blo,.buttons{
+    text-align: center;
+}
+/*CSS styles for the Submit buttons*/
+#yo{
+    font-family: Arial;
+    background-color: black;
+    font-size: 10px;
+    color: white;
+    border-radius: 5px;
+    border-color: white;
+    border-width: 3.2px;
+    cursor:pointer;
+}
+#FlagS{
+    width: 200px;
+    height: 150px;
+}
+
+/*Media CSS */
+@media screen and (max-width:500px)
+{
+    body{
+        color: white;
+        background-color: rgba(8, 8, 8, 0.785);
+    }
+    .buttons{
+        letter-spacing: 7px;
+        line-height: 10px;
+    }
+    #linkB{
+        color: white;
+    }
+    
+    #soow{
+        width: 240px;
+        height: 200px;
+    }
+    #whoo{
+        color: white;
+    }
+}
+
+@media all and (orientation:landscape)
+{
+    body{
+        color: black;
+        background-color:rgb(174, 230, 228);
+    }
+    #linkB{
+        color: black;
+    }
+    #whoo{
+        color: black;
+    }
+}
+
+/*Animation*/
+body {
+    position: relative;
+}
+.sup{
+    position: relative;
+    animation-name: myAnimation;
+    animation-duration: 1s;
+    animation-delay: 0s;
+}
+
+@keyframes myAnimation {
+    0%{color:red;left:0px;}
+    25%{color:yellow;left: -200px;}
+    50%{color:purple;}
+    75%{color:green;left: 200px;}
+    100%{color:blue;left: 0px;}
+}
